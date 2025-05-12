@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Manipura</title>
     <style>
 
       * {
@@ -12,18 +13,28 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        background-image: url(/thumbnails/galaxy.jpg);
+        padding-bottom: 25%;
+        background-image: url(/images/mandala.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding-bottom: 25%;
-        background-color: transparent;
       }
-      
+
+      body::after {
+        content: " ";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 50%;
+        z-index: -10;
+      }
+
+
       a {
         display: flex;
         align-content: space-around;
-        color: rgb(216, 130, 212);
+        color: rgb(255, 217, 0);
         text-decoration: none;
         margin-left: 15px;
         font-size: 22px;
@@ -50,12 +61,13 @@
       .pic > img {
         border-radius: 50px;
         margin-top: 20px;
-        border: 4px solid rgb(71, 1, 88);     
-        box-shadow: 0px 0px 10px 5px rgb(71, 1, 88);
+        border: 4px solid rgb(251, 255, 0);     
+        box-shadow: 0px 0px 10px 5px rgb(234, 255, 0);
       }
 
        /* special text */
       .name {
+        display: flex;
         font-size: 50px;
         padding: 10px;
         align-self: center;
@@ -63,7 +75,7 @@
 
       .fa-brands {
         font-size: 40px;
-        color: rgb(54, 2, 85);
+        color: rgb(255, 217, 0);
         padding: 10px;
       }
       
@@ -72,7 +84,7 @@
         font-family: "Dosis", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
-        background-image: radial-gradient(rgb(245, 146, 230), rgb(128, 183, 241));
+        background-image: radial-gradient(rgb(245, 243, 146), rgb(128, 241, 139));
         background-size: 100%;
         background-color: whitesmoke;
         background-clip: text;
@@ -86,7 +98,7 @@
         font-family: "Nova Flat", serif;
         font-weight: 600;
         font-style: normal;
-        background-image: radial-gradient(rgb(245, 146, 230), rgb(97, 169, 247));
+        background-image: radial-gradient(rgb(255, 255, 255), rgb(161, 161, 161));
         background-size: 100%;
         background-color: whitesmoke;
         background-clip: text;
@@ -98,15 +110,15 @@
 
       /* Purple box white border */
       .everfluorescent {
-        background-image: radial-gradient(rgb(254, 0, 254), rgb(159, 31, 218), transparent);
+        background-image: radial-gradient(rgb(255, 217, 0), rgb(157, 131, 0), transparent);
         display:flex;
         flex-direction: column;
         padding: 25px;
-        border: 5px solid rgb(234, 0, 255);
+        border: 5px solid rgb(254, 236, 135);
         border-radius: 50px;
         margin-top: 15px;
-        box-shadow: 0px 0px 10px 3px rgb(37, 0, 61);
-        box-shadow: inset 10px 10px 10px 3px rgb(37, 0, 61);
+        box-shadow: 0px 0px 10px 3px rgb(21, 18, 23);
+        box-shadow: inset 10px 10px 10px 3px rgb(17, 15, 18);
       }
 
       /* LINKS */
@@ -119,25 +131,26 @@
         padding: 15px;
         margin: 10px;
         border-radius: 50px;
-        box-shadow: 0px 0px 7px 5px rgb(77, 0, 201);
+        box-shadow: 0px 0px 7px 5px rgb(255, 217, 0);
       }
 
       .link:hover {
-        box-shadow: 0px 0px 10px 10px rgb(255, 255, 255);
-        box-shadow: inset 0px 0px 10px 10px rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px 10px rgb(249, 255, 144);
+        box-shadow: inset 0px 0px 10px 10px rgb(255, 255, 166);
       }
 
       .image {
         width: 50px;
         height: 50px;
         border-radius: 50px;
-        box-shadow: 0px 0px 3px 3px rgb(223, 126, 234);
+        box-shadow: 0px 0px 3px 3px rgb(160, 160, 160);
       }
 
       .minib {
-        box-shadow: inset 0px 0px 10px 10px rgb(255, 255, 255);
+
         padding: 20px 30px;
         border-radius: 25px;
+        background-color: rgb(0, 0, 0);
       }
     
     </style>
@@ -151,50 +164,40 @@
 
 <body>
   
-  <div>
-    <img src="/thumbnails/Etsybanner.png" alt="banner" height="200px"/>
+  <img src="/images/logo.jpg" alt="banner" height="200px" class="name"/>
+  
+  <div class="minib">
+  <h1 class="nova-flat-regular">HANDCRAFTED WITH LOVE</h1>
   </div>
-  
-  
-  <h1 class="nova-flat-regular minib">YOU ARE WORTHY OF LOVE AND LIGHT</h1>
-  
   
   <div class="everfluorescent">
 
       <div class="link">
-        <a class="biz" href="https://www.facebook.com/StayFluorescent" target="_blank">
-          <img src="/thumbnails/livepainting.jpg" class="image"/>
-          <p class="nova-flat-regular">Facebook</p></a>
-      </div>
-
-      <div class="link">
-        <a class="biz" href="https://shop.everfluorescent.art/collections/all" target="_blank">
-          <img src="/thumbnails/image.png" class="image"/>
+        <a class="biz" href="https://ladymanipuracreations.bigcartel.com/" target="_blank">
+          <img src="/images/purplependy.jpg" class="image"/>
           <p class="nova-flat-regular">Online Shop</p></a>
       </div>
 
       <div class="link">
-        <a class="biz" href="https://www.instagram.com/everfluorescentofficial/" target="_blank">
-        <img src="/thumbnails/butterfly.jpg" class="image"/>
-        <p class="nova-flat-regular">Instagram</p></a>
+        <a class="biz" href="https://cash.app/$ladymanipura" target="_blank">
+        <img src="/images/rabbitpendant.jpg" class="image"/>
+        <p class="nova-flat-regular">Cashapp</p></a>
       </div>
 
       <div class="link">
-        <a class="biz" href="https://www.linkedin.com/in/anna-villarreal-38254b258/" target="_blank">
-        <img src="/thumbnails/anna.jpg" class="image" />
-        <p class="nova-flat-regular">Anna Villarreal</p></a>
+        <a class="biz" href="https://venmo.com/Leah-Spencer-3" target="_blank">
+        <img src="/images/dragon.jpg" class="image" />
+        <p class="nova-flat-regular">Venmo</p></a>
             <div>
       <div class="socials">
-        <a href="https://www.facebook.com/icahas/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://github.com/AnnaVi11arrea1" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/anna-villarreal-38254b258/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://dev.to/annavi11arrea1" target="_blank"><i class="fa-brands fa-dev"></i></a>
+        <a href="https://www.facebook.com/leahps" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/lady.manipura" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
       </div>
       
     </div>
-    
+
   </body>
   
 </html>
