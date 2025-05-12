@@ -1,0 +1,9 @@
+# Exported from Render on 2025-05-12T01:47:26Z
+services:
+- type: web
+  name: Leah_D
+  runtime: static
+  repo: https://github.com/AnnaVi11arrea1/Leah_D
+  buildCommand: build
+  staticPublishPath: build
+version: "1"
